@@ -1,5 +1,11 @@
 import { FC } from "react";
+import AddToCartButton from "modules/Cart/components/AddToCartButton";
 
-const ProductItem: FC = () => null;
+const ProductItem: FC = () => (
+  <>
+    {"product details"}
+    <AddToCartButton />
+  </>
+);
 
 export default ProductItem;

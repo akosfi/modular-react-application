@@ -4,8 +4,8 @@ import type { NextPage } from "next";
 // import Image from "next/image";
 // import styles from "./index.module.css";
 
-const Home: NextPage = () => {
+const Index: NextPage = () => {
   return <ProductListingPage />;
 };
 
-export default Home;
+export default Index;

@@ -1,5 +1,5 @@
 import { RootState } from "store/store";
-import productListingPageSelectors from "modules/ProductListingPage/selectors";
+import productListingPageSelectors from "modules/ProductListingPage/redux/selectors";
 
 const getState = (state: RootState) =>
   productListingPageSelectors.getModuleState(state).categoryFilter;

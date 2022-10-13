@@ -1,7 +1,7 @@
 import { combineReducers, createSlice } from "@reduxjs/toolkit";
 
 import { Product } from "modules/ProductListingPage/types";
-import categoryFilterReducer from "modules/ProductListingPage/components/CategoryFilter/slice";
+import categoryFilterReducer from "modules/ProductListingPage/components/CategoryFilter/redux/slice";
 
 export type ProductListingPageState = {
   products: Product[];
