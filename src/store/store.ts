@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import ProductListingPageReducer from "modules/ProductListingPage/slice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    productListingPage: ProductListingPageReducer,
+  },
   devTools: true,
 });
 
