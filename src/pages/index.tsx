@@ -1,8 +1,5 @@
-import ProductListingPage from "modules/ProductListingPage";
 import type { NextPage } from "next";
-// import Head from "next/head";
-// import Image from "next/image";
-// import styles from "./index.module.css";
+import { ProductListingPage } from "modules/products";
 
 const Index: NextPage = () => {
   return <ProductListingPage />;

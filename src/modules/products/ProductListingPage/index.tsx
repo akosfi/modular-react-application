@@ -1,7 +1,7 @@
 import { FC } from "react";
 
-import CategoryFilter from "modules/ProductListingPage/components/CategoryFilter";
-import ProductList from "modules/ProductListingPage/components/ProductList";
+import CategoryFilter from "modules/products/ProductListingPage/components/CategoryFilter";
+import ProductList from "modules/products/ProductListingPage/components/ProductList";
 
 const ProductListingPage: FC = () => (
   <>
