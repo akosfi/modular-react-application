@@ -1,6 +1,4 @@
-import { combineReducers, createSlice } from "@reduxjs/toolkit";
-
-export const SLICE_NAME = "categoryFilter";
+import { createSlice } from "@reduxjs/toolkit";
 
 export type CategoryFilterState = {
   activeFilters: string[];
@@ -11,7 +9,7 @@ const initialState: CategoryFilterState = {
 };
 
 const categoryFilterSlice = createSlice({
-  name: SLICE_NAME,
+  name: "categoryFilter",
   initialState,
   reducers: {
     addActiveFilter: (state: CategoryFilterState) => state,

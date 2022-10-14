@@ -1,10 +1,11 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-import { SLICE_NAME } from "modules/products/ProductListingPage/redux/slice";
-
 const fetchProducts = createAsyncThunk(
-  `${SLICE_NAME}/fetchProducts`,
-  async () => {}
+  `productListingPage/fetchProducts`,
+  async () => {
+    const response = await fetch("/api/products");
+    return await response.json();
+  }
 );
 
 export default fetchProducts;
