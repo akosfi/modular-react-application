@@ -5,9 +5,13 @@ const getState = (state: RootState) =>
 
 const getProducts = (state: RootState) => getState(state).products;
 
+const createGetProductById = (id: string) => (state: RootState) =>
+  getProducts(state).find(({ id: _id }) => id === _id);
+
 const productListingPageSelectors = {
   getState,
   getProducts,
+  createGetProductById,
 };
 
 export default productListingPageSelectors;
