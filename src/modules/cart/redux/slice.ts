@@ -1,6 +1,8 @@
 import { combineReducers, createSlice } from "@reduxjs/toolkit";
 
-import { CartProduct } from "modules/Cart/types";
+import { CartProduct } from "modules/cart/types";
+
+export const SLICE_NAME = "cart";
 
 export type CartState = {
   cartProducts: CartProduct[];
@@ -11,14 +13,14 @@ const initialState: CartState = {
 };
 
 const cartSlice = createSlice({
-  name: "cart",
+  name: SLICE_NAME,
   initialState,
   reducers: {
     addProduct: (state: CartState) => state,
   },
 });
 
-export const { actions: cartActions } = cartSlice;
+export const { actions: cartSliceActions } = cartSlice;
 
 export default combineReducers({
   rootState: cartSlice.reducer,

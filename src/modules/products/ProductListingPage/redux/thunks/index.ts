@@ -1,4 +1,4 @@
-import fetchProducts from "modules/ProductListingPage/thunks/fetchProducts";
+import fetchProducts from "modules/products/ProductListingPage/redux/thunks/fetchProducts";
 
 const productListingPageThunks = { fetchProducts };
 

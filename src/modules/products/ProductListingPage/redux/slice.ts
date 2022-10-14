@@ -1,7 +1,9 @@
 import { combineReducers, createSlice } from "@reduxjs/toolkit";
 
-import { Product } from "modules/ProductListingPage/types";
-import categoryFilterReducer from "modules/ProductListingPage/components/CategoryFilter/redux/slice";
+import { Product } from "modules/products/ProductListingPage/types";
+import categoryFilterReducer from "modules/products/ProductListingPage/components/CategoryFilter/redux/slice";
+
+export const SLICE_NAME = "productListingPage";
 
 export type ProductListingPageState = {
   products: Product[];
@@ -12,14 +14,15 @@ const initialState: ProductListingPageState = {
 };
 
 const productListingPageSlice = createSlice({
-  name: "productListingPage",
+  name: SLICE_NAME,
   initialState,
   reducers: {
     loadProducts: (state: ProductListingPageState) => state,
   },
 });
 
-export const { actions: productListingPageActions } = productListingPageSlice;
+export const { actions: productListingPageSliceActions } =
+  productListingPageSlice;
 
 export default combineReducers({
   rootState: productListingPageSlice.reducer,
