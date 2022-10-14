@@ -1,13 +1,3 @@
-import { FC } from "react";
+import ProductListingPage from "modules/products/ProductListingPage/ProductListingPage";
 
-import CategoryFilter from "modules/products/ProductListingPage/components/CategoryFilter";
-import ProductList from "modules/products/ProductListingPage/components/ProductList";
-
-const ProductListingPage: FC = () => (
-  <>
-    <CategoryFilter />
-    <ProductList />
-  </>
-);
-
-export default ProductListingPage;
+export { ProductListingPage };

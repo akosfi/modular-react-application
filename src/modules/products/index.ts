@@ -1,3 +1,3 @@
-import ProductListingPage from "modules/products/ProductListingPage";
+import { ProductListingPage } from "modules/products/ProductListingPage";
 
 export { ProductListingPage };

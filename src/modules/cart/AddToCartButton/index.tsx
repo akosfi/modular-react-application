@@ -1,5 +1,3 @@
-import { FC } from "react";
+import AddToCartButton from "modules/cart/AddToCartButton/AddToCartButton";
 
-const AddToCartButton: FC = () => <></>;
-
-export default AddToCartButton;
+export { AddToCartButton };

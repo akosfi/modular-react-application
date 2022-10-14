@@ -1,5 +1,3 @@
-import { FC } from "react";
+import CartPage from "modules/cart/CartPage/CartPage";
 
-const CartPage: FC = () => <></>;
-
-export default CartPage;
+export { CartPage };
